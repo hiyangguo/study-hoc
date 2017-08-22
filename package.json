@@ -1,0 +1,21 @@
+{
+  "name": "study-hoc",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "recompact": "^3.0.5"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.11"
+  },
+  "scripts": {
+    "start": "PORT=3010 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
