@@ -3,10 +3,10 @@ import getDisplayName from '../util/getDisplayName';
 /**
  * 基于反向继承的方式
  * @param WrappedComponent
- * @return {Inheritance}
+ * @return {Enhancer}
  */
 export default function (WrappedComponent) {
-  return class Inheritance extends WrappedComponent {
+  return class Enhancer extends WrappedComponent {
     static displayName = `InheritanceHOC(${getDisplayName(WrappedComponent)})`;
 
     componentWillMount() {

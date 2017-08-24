@@ -5,6 +5,8 @@
   "dependencies": {
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-babel": "^4.1.2",
+    "hoist-non-react-statics": "^2.3.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "recompact": "^3.0.5"

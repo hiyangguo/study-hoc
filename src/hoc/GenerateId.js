@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createElement } from 'react';
 import getDisplayName from '../util/getDisplayName';
 
 /**
@@ -14,12 +14,11 @@ export default function GenerateId(WrappedComponent) {
       const newProps = {
         id: Math.random().toString(36).substring(2).toUpperCase()
       };
-      // 透传props，并且传递新的newProps
-      return (
-        <div>
-          <WrappedComponent {...this.props} {...newProps} />
-        </div>
-      );
+
+      return createElement(WrappedComponent, {
+        ...this.props,
+        ...newProps
+      });
     }
   };
 }
